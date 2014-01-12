@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OverlayView.h
 //  Animations
 //
 //  Created by Oleg Trakhman on 1/10/14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OverlayView : UIView
+@property (nonatomic, assign) CGPoint rotationCenter;
+@property (nonatomic, assign) CGFloat radius;
 @end

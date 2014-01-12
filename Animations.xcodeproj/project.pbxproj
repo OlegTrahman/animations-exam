@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336387BC188053C3004C69D7 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336387BB188053C3004C69D7 /* CollectionViewController.m */; };
+		336387C218806CEE004C69D7 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 336387C118806CEE004C69D7 /* OverlayView.m */; };
+		336387CC188090FB004C69D7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C3188090FB004C69D7 /* 1.png */; };
+		336387CD188090FB004C69D7 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C4188090FB004C69D7 /* 2.png */; };
+		336387CE188090FB004C69D7 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C5188090FB004C69D7 /* 3.png */; };
+		336387CF188090FB004C69D7 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C6188090FB004C69D7 /* 4.png */; };
+		336387D0188090FB004C69D7 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C7188090FB004C69D7 /* closeButton.png */; };
+		336387D1188090FB004C69D7 /* minusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C8188090FB004C69D7 /* minusButton.png */; };
+		336387D2188090FB004C69D7 /* plusButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387C9188090FB004C69D7 /* plusButton.png */; };
+		336387D4188090FB004C69D7 /* zeroButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387CB188090FB004C69D7 /* zeroButton.png */; };
+		336387D718815C77004C69D7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336387D618815C77004C69D7 /* RootViewController.m */; };
+		336387DA18829E56004C69D7 /* hideButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387D818829E56004C69D7 /* hideButton.png */; };
+		336387DB18829E56004C69D7 /* showButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387D918829E56004C69D7 /* showButton.png */; };
+		336387DE1882AD2B004C69D7 /* rotationSignCCW.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387DC1882AD2B004C69D7 /* rotationSignCCW.png */; };
+		336387DF1882AD2B004C69D7 /* rotationSignCW.png in Resources */ = {isa = PBXBuildFile; fileRef = 336387DD1882AD2B004C69D7 /* rotationSignCW.png */; };
 		339D94531880087B002DF985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D94521880087B002DF985 /* Foundation.framework */; };
 		339D94551880087B002DF985 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D94541880087B002DF985 /* CoreGraphics.framework */; };
 		339D94571880087B002DF985 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D94561880087B002DF985 /* UIKit.framework */; };
@@ -14,7 +29,6 @@
 		339D945F1880087B002DF985 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 339D945E1880087B002DF985 /* main.m */; };
 		339D94631880087B002DF985 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 339D94621880087B002DF985 /* AppDelegate.m */; };
 		339D94661880087B002DF985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339D94641880087B002DF985 /* Main.storyboard */; };
-		339D94691880087B002DF985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 339D94681880087B002DF985 /* ViewController.m */; };
 		339D946B1880087B002DF985 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339D946A1880087B002DF985 /* Images.xcassets */; };
 		339D94721880087B002DF985 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D94711880087B002DF985 /* XCTest.framework */; };
 		339D94731880087B002DF985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339D94521880087B002DF985 /* Foundation.framework */; };
@@ -34,6 +48,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		336387BA188053C3004C69D7 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		336387BB188053C3004C69D7 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		336387C018806CEE004C69D7 /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		336387C118806CEE004C69D7 /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		336387C3188090FB004C69D7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		336387C4188090FB004C69D7 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		336387C5188090FB004C69D7 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		336387C6188090FB004C69D7 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		336387C7188090FB004C69D7 /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
+		336387C8188090FB004C69D7 /* minusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minusButton.png; sourceTree = "<group>"; };
+		336387C9188090FB004C69D7 /* plusButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plusButton.png; sourceTree = "<group>"; };
+		336387CB188090FB004C69D7 /* zeroButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zeroButton.png; sourceTree = "<group>"; };
+		336387D518815C77004C69D7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		336387D618815C77004C69D7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		336387D818829E56004C69D7 /* hideButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hideButton.png; sourceTree = "<group>"; };
+		336387D918829E56004C69D7 /* showButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showButton.png; sourceTree = "<group>"; };
+		336387DC1882AD2B004C69D7 /* rotationSignCCW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotationSignCCW.png; sourceTree = "<group>"; };
+		336387DD1882AD2B004C69D7 /* rotationSignCW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotationSignCW.png; sourceTree = "<group>"; };
 		339D944F1880087B002DF985 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		339D94521880087B002DF985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		339D94541880087B002DF985 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,8 +77,6 @@
 		339D94611880087B002DF985 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		339D94621880087B002DF985 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		339D94651880087B002DF985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		339D94671880087B002DF985 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		339D94681880087B002DF985 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		339D946A1880087B002DF985 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		339D94701880087B002DF985 /* AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		339D94711880087B002DF985 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -79,6 +109,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336387B1188049BE004C69D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				336387DC1882AD2B004C69D7 /* rotationSignCCW.png */,
+				336387DD1882AD2B004C69D7 /* rotationSignCW.png */,
+				336387D818829E56004C69D7 /* hideButton.png */,
+				336387D918829E56004C69D7 /* showButton.png */,
+				336387C3188090FB004C69D7 /* 1.png */,
+				336387C4188090FB004C69D7 /* 2.png */,
+				336387C5188090FB004C69D7 /* 3.png */,
+				336387C6188090FB004C69D7 /* 4.png */,
+				336387C7188090FB004C69D7 /* closeButton.png */,
+				336387C8188090FB004C69D7 /* minusButton.png */,
+				336387C9188090FB004C69D7 /* plusButton.png */,
+				336387CB188090FB004C69D7 /* zeroButton.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		339D94461880087B002DF985 = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +161,18 @@
 		339D94581880087B002DF985 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				336387B1188049BE004C69D7 /* Images */,
 				339D94611880087B002DF985 /* AppDelegate.h */,
 				339D94621880087B002DF985 /* AppDelegate.m */,
 				339D94641880087B002DF985 /* Main.storyboard */,
-				339D94671880087B002DF985 /* ViewController.h */,
-				339D94681880087B002DF985 /* ViewController.m */,
 				339D946A1880087B002DF985 /* Images.xcassets */,
 				339D94591880087B002DF985 /* Supporting Files */,
+				336387BA188053C3004C69D7 /* CollectionViewController.h */,
+				336387BB188053C3004C69D7 /* CollectionViewController.m */,
+				336387C018806CEE004C69D7 /* OverlayView.h */,
+				336387C118806CEE004C69D7 /* OverlayView.m */,
+				336387D518815C77004C69D7 /* RootViewController.h */,
+				336387D618815C77004C69D7 /* RootViewController.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -228,8 +282,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336387D1188090FB004C69D7 /* minusButton.png in Resources */,
+				336387D4188090FB004C69D7 /* zeroButton.png in Resources */,
 				339D946B1880087B002DF985 /* Images.xcassets in Resources */,
+				336387CF188090FB004C69D7 /* 4.png in Resources */,
+				336387D2188090FB004C69D7 /* plusButton.png in Resources */,
+				336387CC188090FB004C69D7 /* 1.png in Resources */,
+				336387DE1882AD2B004C69D7 /* rotationSignCCW.png in Resources */,
+				336387CD188090FB004C69D7 /* 2.png in Resources */,
+				336387DF1882AD2B004C69D7 /* rotationSignCW.png in Resources */,
+				336387D0188090FB004C69D7 /* closeButton.png in Resources */,
+				336387DA18829E56004C69D7 /* hideButton.png in Resources */,
+				336387CE188090FB004C69D7 /* 3.png in Resources */,
 				339D945D1880087B002DF985 /* InfoPlist.strings in Resources */,
+				336387DB18829E56004C69D7 /* showButton.png in Resources */,
 				339D94661880087B002DF985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,9 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339D94691880087B002DF985 /* ViewController.m in Sources */,
+				336387BC188053C3004C69D7 /* CollectionViewController.m in Sources */,
+				336387C218806CEE004C69D7 /* OverlayView.m in Sources */,
 				339D94631880087B002DF985 /* AppDelegate.m in Sources */,
 				339D945F1880087B002DF985 /* main.m in Sources */,
+				336387D718815C77004C69D7 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +528,7 @@
 				339D94831880087B002DF985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339D94841880087B002DF985 /* Build configuration list for PBXNativeTarget "AnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +537,7 @@
 				339D94861880087B002DF985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
