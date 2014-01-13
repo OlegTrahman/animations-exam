@@ -10,8 +10,6 @@
 
 @implementation OverlayView
 
-
-
 - (void)drawRect:(CGRect)rect
 {
     const CGFloat kCircleWidth = 120.0;
@@ -23,6 +21,5 @@
 	CGContextStrokePath(context);
     
 }
-
 
 @end

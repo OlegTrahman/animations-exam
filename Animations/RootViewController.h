@@ -10,18 +10,18 @@
 #import "OverlayView.h"
 @interface RootViewController : UIViewController
 {
+    
     NSArray *rotatingButtons;
     CGPoint rotationCenter;
     CGFloat _rotationAngle;
     CGFloat radius;
     BOOL filterEnabled;
     
-    UITapGestureRecognizer  *tapRecognizer;
-    
     UIPanGestureRecognizer *panRecognizer;
 }
-
 @property (nonatomic, readwrite) CGFloat rotationAngle;
+
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIButton *animationButton;
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
 @property (weak, nonatomic) IBOutlet UIButton *zeroButton;

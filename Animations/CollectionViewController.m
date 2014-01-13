@@ -21,10 +21,10 @@
     cellImages  = @[@"1.png", @"2.png", @"3.png", @"4.png", @"1.png", @"2.png", @"3.png", @"4.png"];
     
 }
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return cellImages.count;
 }
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"Cell";
@@ -36,6 +36,7 @@
     
     return cell;
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

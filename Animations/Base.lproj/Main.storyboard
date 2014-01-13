@@ -152,6 +152,7 @@
                     <connections>
                         <outlet property="animationButton" destination="FsS-rh-bSi" id="Z8N-bR-e0h"/>
                         <outlet property="closeButton" destination="wHe-Rx-SZ1" id="Mjf-Ch-Ahp"/>
+                        <outlet property="containerView" destination="ml9-bK-haB" id="B4S-P6-nPD"/>
                         <outlet property="minusButton" destination="9tM-Xk-54r" id="9Qi-Pp-22w"/>
                         <outlet property="overlayView" destination="uOH-6S-6RD" id="dMq-zu-JRe"/>
                         <outlet property="plusButton" destination="ouE-zZ-UPb" id="bUV-WM-Obh"/>

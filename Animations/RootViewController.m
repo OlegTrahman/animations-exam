@@ -8,6 +8,12 @@
 
 #import "RootViewController.h"
 
+// bugfix #2: restrain buttons from rotating offscreen
+const CGFloat minAngle = -M_PI_4/4;
+const CGFloat maxAngle = M_PI_4/4;
+const CGFloat midAngle = (maxAngle + minAngle) / 2;
+
+const CGFloat hideAngle = -M_PI_4 * 3;
 
 CGPoint changeAnchorPointAndRotate(CGPoint offset, CGFloat angle)
 {
@@ -38,6 +44,8 @@ CGFloat angleFromCGPoint(CGPoint pt1, CGPoint pt2)
     // Disable user interaction until the end of animation
     sender.userInteractionEnabled = NO;
     
+    // bugfix #1: disable user interactions with filtered views
+    _overlayView.userInteractionEnabled = filterEnabled;
 
     UIImage *buttonImg = [UIImage imageNamed:filterEnabled ? @"hideButton.png" : @"showButton.png"];
     [_animationButton setImage:buttonImg forState:UIControlStateNormal];
@@ -58,7 +66,7 @@ CGFloat angleFromCGPoint(CGPoint pt1, CGPoint pt2)
     } else {
         [self.view removeGestureRecognizer:panRecognizer];
         [UIView animateWithDuration:animationDuration animations:^(){
-            self.rotationAngle = M_PI;
+            self.rotationAngle = hideAngle;
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:animationDuration animations:^(){
                 _overlayView.alpha = 0.0;
@@ -101,7 +109,7 @@ CGFloat angleFromCGPoint(CGPoint pt1, CGPoint pt2)
     }
 
     // Hide buttons, to reveal them latter
-    self.rotationAngle = M_PI;
+    self.rotationAngle = hideAngle;
 
     // Add gestures
     panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
@@ -129,8 +137,19 @@ CGFloat angleFromCGPoint(CGPoint pt1, CGPoint pt2)
     CGFloat angle1 = angleFromCGPoint(origin, rotationCenter);
     CGFloat angle2 = angleFromCGPoint(loc, rotationCenter);
     CGFloat angleDiff = angle2 - angle1;
-
-    self.rotationAngle = angleDiff + initialAngle;
+    
+    // bugfix #2: restrain buttons from rotating offscreen
+    CGFloat rotationAngleRaw = angleDiff + initialAngle;
+    
+    if (rotationAngleRaw > maxAngle) {
+        rotationAngleRaw = maxAngle;
+    }
+    
+    if (rotationAngleRaw < minAngle) {
+        rotationAngleRaw = minAngle;
+    }
+    
+    self.rotationAngle = rotationAngleRaw;
 }
 
 - (CGFloat)rotationAngle
@@ -140,14 +159,15 @@ CGFloat angleFromCGPoint(CGPoint pt1, CGPoint pt2)
 
 - (void)setRotationAngle: (CGFloat)rotationAngle
 {
-    const CGFloat thresholdAngle = -M_PI_4 / 4;
     
-    if (_rotationAngle > thresholdAngle) {
+    if (_rotationAngle > midAngle) {
         [_rotationSign setImage:[UIImage imageNamed:@"rotationSignCCW.png"]];
     } else {
         [_rotationSign setImage:[UIImage imageNamed:@"rotationSignCW.png"]];
     }
+    
     _rotationAngle = rotationAngle;
+    
     for (UIButton *btn in rotatingButtons) {
         btn.transform = CGAffineTransformMakeRotation(_rotationAngle);
     }
